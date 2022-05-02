@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Just Dance Explorer</title>
+  </head>
+  <body id="body-html">
+    <header>
+	  <nav class="navbar navbar-danger bg-danger text-white" id="navbar">
+		  <div class="container-fluid">
+			<span class="navbar-brand mb-0 h1">Just Dance Explorer</span>
+			<div class="d-flex">
+			  <button class="btn text-white" id="change-theme">Change to dark theme</button>
+			</div>
+		  </div>
+		</nav> 
+	</header>
+	
+	<main class="p-2 m-auto">
+		<div class="container" id="live-alert"></div>
+		
+		<div class="container">
+			<div class="card" id="list-card">
+				<div class="p-3">
+					<div class="input-group mb-3">
+						<button class="btn btn-outline-secondary" type="button" id="go-to-this-path">Go to</button>
+						<input type="text" class="form-control" value="/" id="path-value">
+					</div>
+				</div>
+				
+				<div class="card-body">
+					<ul class="list-group" id="file-list"></ul>
+					<div class="card" id="content-menu" hidden="true">
+						<div class="container" id="content-menu-preview"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<center>
+			<div class="container">
+					<h6>© 2019 Ubisoft Entertainment. All Rights Reserved. Just Dance, Ubisoft, and the Ubisoft logo are trademarks of Ubisoft Entertainment in the US and/or other countries. © 2019 Nintendo, Nintendo Switch and Joy-Con are trademarks of Nintendo. Wii and Wii U are trademarks of Nintendo. Playstation, the “PS” Family logo and “PS4” are registered trademarks of Sony Computer Entertainment Inc.
+		PAC-MAN®&©BANDAI NAMCO Entertainment Inc.</h6>
+			</div>
+		</center>
+	</footer>
+	
+	<script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+	
+	<script src="static/js/basicFunc.min.js"></script>
+	<script src="static/js/index.js"></script>
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
